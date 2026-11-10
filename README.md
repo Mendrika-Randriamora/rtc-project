@@ -2,6 +2,7 @@
 
 Projet Wokwi : mesurer la température et l'humidité, et **connaître l'heure exacte de chaque mesure** grâce à un module RTC réglé sur l'heure de Madagascar (GMT+3). Chaque mesure est envoyée en JSON par MQTT.
 
+![img](img/img.png)
 ## 1. Objectif
 
 - Mesurer température et humidité avec un **DHT22**.

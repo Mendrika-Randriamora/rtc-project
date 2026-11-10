@@ -1,0 +1,5 @@
+DHT sensor library
+Adafruit Unified Sensor
+Adafruit BusIO
+RTClib
+PubSubClient

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht", "top": -40, "left": 200, "attrs": {} },
+    { "type": "wokwi-ds1307", "id": "rtc", "top": 120, "left": 200, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "dht:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "dht:SDA", "esp:D15", "green", [ "v0" ] ],
+    [ "rtc:GND", "esp:GND.1", "black", [ "h0" ] ],
+    [ "rtc:5V", "esp:VIN", "red", [ "h0" ] ],
+    [ "rtc:SDA", "esp:D21", "blue", [ "h0" ] ],
+    [ "rtc:SCL", "esp:D22", "purple", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
